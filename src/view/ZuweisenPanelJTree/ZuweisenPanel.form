@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="view.ZuweisenPanelJTree.ZuweisenPanel">
+  <grid id="27dc6" binding="rootPane" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <toolbar id="4c7bf" binding="toolBar">
+        <constraints border-constraint="North"/>
+        <properties>
+          <floatable value="false"/>
+          <maximumSize width="0" height="30"/>
+          <minimumSize width="0" height="30"/>
+          <preferredSize width="0" height="30"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="1e4ac" class="javax.swing.JButton" binding="saveButton">
+            <constraints/>
+            <properties>
+              <icon value="img/save_FILL0_24.png"/>
+              <maximumSize width="30" height="30"/>
+              <minimumSize width="30" height="30"/>
+              <preferredSize width="30" height="30"/>
+              <text value=""/>
+              <toolTipText value="Änderungen speichern"/>
+            </properties>
+          </component>
+        </children>
+      </toolbar>
+      <splitpane id="6ecc4">
+        <constraints border-constraint="Center"/>
+        <properties>
+          <continuousLayout value="false"/>
+          <dividerLocation value="400"/>
+          <dividerSize value="6"/>
+          <enabled value="true"/>
+          <oneTouchExpandable value="true"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="dedb5" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <splitpane position="left"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="176ad" class="javax.swing.JLabel" binding="gruppenLabel">
+                <constraints border-constraint="First"/>
+                <properties>
+                  <text value="Gruppen:"/>
+                </properties>
+              </component>
+              <scrollpane id="5ba70" binding="scrollPaneGruppenTree">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <horizontalScrollBarPolicy value="31"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="f944d" class="javax.swing.JTree" binding="gruppenTree" custom-create="true">
+                    <constraints/>
+                    <properties>
+                      <dragEnabled value="false"/>
+                      <dropMode value="USE_SELECTION"/>
+                      <editable value="false"/>
+                      <enabled value="true"/>
+                      <expandsSelectedPaths value="false"/>
+                      <focusCycleRoot value="false"/>
+                      <inheritsPopupMenu value="false"/>
+                      <rootVisible value="false"/>
+                      <scrollsOnExpand value="true"/>
+                      <showsRootHandles value="true"/>
+                      <visible value="true"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
+            </children>
+          </grid>
+          <grid id="edb69" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <splitpane position="right"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="433e3" class="javax.swing.JLabel" binding="themenLabel">
+                <constraints border-constraint="First"/>
+                <properties>
+                  <text value="Themen:"/>
+                </properties>
+              </component>
+              <scrollpane id="c9d20" binding="scrollPaneThemenTree">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <horizontalScrollBarPolicy value="31"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="4970b" class="javax.swing.JTree" binding="themenTree" custom-create="true">
+                    <constraints/>
+                    <properties>
+                      <dragEnabled value="true"/>
+                      <dropMode value="INSERT"/>
+                      <rootVisible value="false"/>
+                      <showsRootHandles value="false"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
+            </children>
+          </grid>
+        </children>
+      </splitpane>
+    </children>
+  </grid>
+</form>
